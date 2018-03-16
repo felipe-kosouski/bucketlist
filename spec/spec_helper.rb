@@ -93,4 +93,6 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+  # Add additional requires below this line. Rails is not loaded until this point!
+  require 'support/simplecov.rb'
 end
