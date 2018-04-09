@@ -7,10 +7,12 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 
-
 gem 'pg', '0.18.4'
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
+gem 'simple_form'
+gem 'rails-i18n', '~> 5.0.0'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
