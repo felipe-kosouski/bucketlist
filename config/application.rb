@@ -20,5 +20,7 @@ module Bucketlist
     config.i18n.enforce_available_locales = false
     config.i18n.available_locales = ["pt-BR"]
     config.i18n.default_locale = :'pt-BR'
+
+    ENV.update YAML.load_file('config/application.yml')[Rails.env] rescue {}
   end
 end
