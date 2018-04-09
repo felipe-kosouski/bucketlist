@@ -1,12 +1,51 @@
 {
   "RSpec": {
     "coverage": {
+      "/home/felipe/Documentos/Web5/bucketlist/app/models/user.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/home/felipe/Documentos/Web5/bucketlist/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
       "/home/felipe/Documentos/Web5/bucketlist/app/helpers/application_helper.rb": [
         1,
+        1,
+        null,
+        3,
+        null,
+        null,
+        1,
+        6,
+        3,
+        null,
+        3,
+        null,
+        null,
         null
       ],
       "/home/felipe/Documentos/Web5/bucketlist/app/helpers/home_helper.rb": [
         1,
+        null
+      ],
+      "/home/felipe/Documentos/Web5/bucketlist/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        6,
+        null,
+        3,
+        null,
         null
       ],
       "/home/felipe/Documentos/Web5/bucketlist/app/controllers/home_controller.rb": [
@@ -15,18 +54,8 @@
         null,
         null
       ],
-      "/home/felipe/Documentos/Web5/bucketlist/app/controllers/application_controller.rb": [
-        1,
-        1,
-        null
-      ],
       "/home/felipe/Documentos/Web5/bucketlist/app/mailers/application_mailer.rb": [
         0,
-        0,
-        0,
-        0
-      ],
-      "/home/felipe/Documentos/Web5/bucketlist/app/models/application_record.rb": [
         0,
         0,
         0
@@ -36,6 +65,6 @@
         0
       ]
     },
-    "timestamp": 1521228762
+    "timestamp": 1523314007
   }
 }
