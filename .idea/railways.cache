@@ -1,2 +1,45 @@
-Prefix Verb URI Pattern Controller#Action
-  root GET  /           home#index
+                             Prefix Verb   URI Pattern                                           Controller#Action
+             admins_dashboard_index GET    /admins/dashboard/index(.:format)                     admins/dashboard#index
+                  new_admin_session GET    /admins/sign_in(.:format)                             devise/sessions#new
+                      admin_session POST   /admins/sign_in(.:format)                             devise/sessions#create
+              destroy_admin_session DELETE /admins/sign_out(.:format)                            devise/sessions#destroy
+                 new_admin_password GET    /admins/password/new(.:format)                        devise/passwords#new
+                edit_admin_password GET    /admins/password/edit(.:format)                       devise/passwords#edit
+                     admin_password PATCH  /admins/password(.:format)                            devise/passwords#update
+                                    PUT    /admins/password(.:format)                            devise/passwords#update
+                                    POST   /admins/password(.:format)                            devise/passwords#create
+              users_dashboard_index GET    /users/dashboard/index(.:format)                      users/dashboard#index
+                               root GET    /                                                     home#index
+                   new_user_session GET    /users/sign_in(.:format)                              devise/sessions#new
+                       user_session POST   /users/sign_in(.:format)                              devise/sessions#create
+               destroy_user_session DELETE /users/sign_out(.:format)                             devise/sessions#destroy
+                  new_user_password GET    /users/password/new(.:format)                         devise/passwords#new
+                 edit_user_password GET    /users/password/edit(.:format)                        devise/passwords#edit
+                      user_password PATCH  /users/password(.:format)                             devise/passwords#update
+                                    PUT    /users/password(.:format)                             devise/passwords#update
+                                    POST   /users/password(.:format)                             devise/passwords#create
+           cancel_user_registration GET    /users/cancel(.:format)                               devise/registrations#cancel
+              new_user_registration GET    /users/sign_up(.:format)                              devise/registrations#new
+             edit_user_registration GET    /users/edit(.:format)                                 devise/registrations#edit
+                  user_registration PATCH  /users(.:format)                                      devise/registrations#update
+                                    PUT    /users(.:format)                                      devise/registrations#update
+                                    DELETE /users(.:format)                                      devise/registrations#destroy
+                                    POST   /users(.:format)                                      devise/registrations#create
+                         users_root GET    /users(.:format)                                      users/dashboard#index
+  users_list_mark_task_as_completed PATCH  /users/lists/:list_id/tasks/:id/completed(.:format)   users/tasks#completed
+users_list_mark_task_as_uncompleted PATCH  /users/lists/:list_id/tasks/:id/uncompleted(.:format) users/tasks#uncompleted
+                   users_list_tasks POST   /users/lists/:list_id/tasks(.:format)                 users/tasks#create
+                new_users_list_task GET    /users/lists/:list_id/tasks/new(.:format)             users/tasks#new
+               edit_users_list_task GET    /users/lists/:list_id/tasks/:id/edit(.:format)        users/tasks#edit
+                    users_list_task GET    /users/lists/:list_id/tasks/:id(.:format)             users/tasks#show
+                                    PATCH  /users/lists/:list_id/tasks/:id(.:format)             users/tasks#update
+                                    PUT    /users/lists/:list_id/tasks/:id(.:format)             users/tasks#update
+                                    DELETE /users/lists/:list_id/tasks/:id(.:format)             users/tasks#destroy
+                        users_lists POST   /users/lists(.:format)                                users/lists#create
+                     new_users_list GET    /users/lists/new(.:format)                            users/lists#new
+                    edit_users_list GET    /users/lists/:id/edit(.:format)                       users/lists#edit
+                         users_list GET    /users/lists/:id(.:format)                            users/lists#show
+                                    PATCH  /users/lists/:id(.:format)                            users/lists#update
+                                    PUT    /users/lists/:id(.:format)                            users/lists#update
+                                    DELETE /users/lists/:id(.:format)                            users/lists#destroy
+                        admins_root GET    /admins(.:format)                                     admins/dashboard#index
