@@ -1,0 +1,18 @@
+<li class="list-group-item">
+  <div class="form-check">
+    <input  update-task-status-url="<%= send(url, @list, task) %>" type="checkbox"
+            data-status=<%= task.done? %> class="form-check-input">
+    <label class="form-check-label" for="exampleCheck1"><%= task.title %></label>
+  </div>
+</li>
+
+
+
+
+
+<!--<label class="custom-control custom-checkbox">
+  <input update-task-status-url="<%#= send(url, @list, task) %>" type="checkbox"
+         data-status=<%#= task.done? %> class="custom-control-input" >
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description"><%#= task.title %></span>
+</label>-->
